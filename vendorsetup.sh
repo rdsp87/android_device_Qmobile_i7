@@ -1,1 +1,1 @@
-add_lunch_combo cm_sprout-userdebug
+add_lunch_combo cm_i7-userdebug

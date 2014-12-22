@@ -63,15 +63,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_TAGS += dalvik.gc.type-precise
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/root/init.sprout.rc:root/init.sprout.rc \
+    $(LOCAL_PATH)/rootdir/root/init.i7.rc:root/init.i7.rc \
     $(LOCAL_PATH)/rootdir/root/init.protect.rc:root/init.protect.rc \
     $(LOCAL_PATH)/rootdir/root/init.modem.rc:root/init.modem.rc \
     $(LOCAL_PATH)/rootdir/root/factory_init.rc:root/factory_init.rc \
-    $(LOCAL_PATH)/rootdir/root/fstab.sprout:root/fstab.sprout \
-    $(LOCAL_PATH)/rootdir/root/ueventd.sprout.rc:root/ueventd.sprout.rc \
-    $(LOCAL_PATH)/rootdir/root/init.sprout.usb.rc:root/init.sprout.usb.rc
+    $(LOCAL_PATH)/rootdir/root/fstab.i7:root/fstab.i7 \
+    $(LOCAL_PATH)/rootdir/root/ueventd.i7.rc:root/ueventd.i7.rc \
+    $(LOCAL_PATH)/rootdir/root/init.i7.usb.rc:root/init.i7.usb.rc
 
-DEVICE_PACKAGE_OVERLAYS := device/google/sprout/overlay
+DEVICE_PACKAGE_OVERLAYS := device/google/i7/overlay
 	
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/root/twrp.fstab:recovery/root/etc/twrp.fstab
@@ -106,4 +106,4 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 PRODUCT_PACKAGES += Torch
 
 # call the proprietary setup
-$(call inherit-product, vendor/google/sprout/sprout-vendor.mk)
+$(call inherit-product, vendor/google/i7/i7-vendor.mk)

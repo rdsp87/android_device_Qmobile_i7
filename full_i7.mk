@@ -5,9 +5,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Call device specific makefile
-$(call inherit-product, device/google/sprout/i7.mk)
+$(call inherit-product, device/QMobile/i7/i7.mk)
 
-LOCAL_PATH := device/google/i7
+LOCAL_PATH := device/QMobile/i7
 
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=4.4.4/KPW53/1379542:user/release-keys PRIVATE_BUILD_DESC="sprout-user 4.4.4 KPW53 1379542 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=4.4.4/KPW53/1379542:user/release-keys PRIVATE_BUILD_DESC="i7-user 4.4.4 KPW53 1379542 release-keys"
 

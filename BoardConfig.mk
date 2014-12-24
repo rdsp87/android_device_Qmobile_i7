@@ -1,4 +1,4 @@
-LOCAL_PATH := device/google/i7
+LOCAL_PATH := device/QMobile/i7
 
 TARGET_BOARD_PLATFORM := mt6582
 TARGET_CPU_ABI := armeabi-v7a
@@ -24,7 +24,7 @@ BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 DEVICE_RESOLUTION := 540x960
 
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/google/i7/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/QMobile/i7/bluetooth
 
 
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/root/fstab.i7
@@ -66,10 +66,10 @@ TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_USERIMAGES_USE_EXT4:=true
 USE_CAMERA_STUB := true
 
-BOARD_RIL_CLASS := ../../../device/google/i7/ril/
+BOARD_RIL_CLASS := ../../../device/QMobile/i7/ril/
 
 BOARD_SEPOLICY_DIRS += \
-    device/google/i7/sepolicy
+    device/QMobile/i7/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     file_contexts \

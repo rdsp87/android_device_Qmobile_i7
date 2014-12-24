@@ -71,7 +71,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/root/ueventd.i7.rc:root/ueventd.i7.rc \
     $(LOCAL_PATH)/rootdir/root/init.i7.usb.rc:root/init.i7.usb.rc
 
-DEVICE_PACKAGE_OVERLAYS := device/google/i7/overlay
+DEVICE_PACKAGE_OVERLAYS := device/QMobile/i7/overlay
 	
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/root/twrp.fstab:recovery/root/etc/twrp.fstab
@@ -106,4 +106,4 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 PRODUCT_PACKAGES += Torch
 
 # call the proprietary setup
-$(call inherit-product, vendor/google/i7/i7-vendor.mk)
+$(call inherit-product, vendor/QMobile/i7/i7-vendor.mk)
